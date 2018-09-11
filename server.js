@@ -3,9 +3,9 @@ var bodyParser = require("body-parser");
 var path = require("path");
 
 var app = express();
-// require("./app/data/friends.js");
-// require("./app/routing/apiRoutes.js");
+var api = require("./app/routing/apiRoutes.js");
 var router = require("./app/routing/htmlRoutes.js");
+app.use("/api/friends", api);
 app.use("/", router);
 
 
@@ -16,6 +16,7 @@ var PORT = process.env.PORT || 8080;
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 
 
 
