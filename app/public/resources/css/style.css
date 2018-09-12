@@ -1,3 +1,42 @@
 body {
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../images/friends.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #0b0803;
 };
+
+.section {
+    color: white;
+}
+
+#survey h3, h4, .h5 {
+    color: white;
+}
+
+.jumboLink {
+    color: #0b0803;
+    text-decoration: none;
+}
+
+.jumboLink:hover {
+    color: #0b0803;
+    text-decoration: underline;
+}
+
+.jumbotron h1, h2 {
+    color: #0b0803;
+}
+
+
+.jumbotron {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.footLink, .footLink:hover {
+    color: white;
+}
+
+.form-group h2 {
+    color: white;
+}
